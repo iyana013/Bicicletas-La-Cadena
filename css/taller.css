@@ -1,0 +1,98 @@
+.div-table-taller {
+	display: flex;
+	justify-content: center;
+}
+
+.table-taller {
+	width: 80%;
+}
+
+.table-taller td,
+.table-taller th {
+	padding: 1%;
+	text-align: left;
+	vertical-align: middle;
+	border-bottom: 2px solid #d0d0d0;
+}
+
+.table-taller thead th {
+	padding: 0.5%;
+	text-align: center;
+	vertical-align: middle;
+	border-bottom: 3px solid #333;
+	font-size: 0.9em;
+}
+
+.table-taller tbody th {
+	font-weight: 600;
+}
+
+.btn-add {
+	padding: 6px 14px;
+	border: 2px solid #333;
+	background: transparent;
+	cursor: pointer;
+	font-weight: 600;
+}
+
+.btn-add:hover {
+	background: #333;
+	color: #fff;
+}
+
+.div-carrito {
+	width: 80%;
+	margin: 30px auto;
+}
+
+#lista-carrito {
+	list-style: none;
+	padding: 0;
+}
+
+#lista-carrito li {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 16px;
+	padding: 8px 0;
+	border-bottom: 2px solid #d0d0d0;
+}
+
+.contenido-carrito {
+	display: flex;
+	align-items: flex-start;
+	gap: 40px;
+}
+
+.resumen-carrito {
+	width: 30%;
+}
+
+.item-carrito {
+	flex: 1;
+}
+
+.aviso-total {
+	font-size: 1.3em;
+	font-weight: 700;
+	text-align: left;
+}
+
+.btn-div {
+	display: flex;
+	justify-content: center;
+}
+
+.btn-delete {
+	padding: 6px 14px;
+	border: 2px solid #333;
+	background: white;
+	cursor: pointer;
+	font-weight: 600;
+}
+
+.btn-delete:hover {
+	background: #333;
+	color: #fff;
+}
