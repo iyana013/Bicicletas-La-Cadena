@@ -5,10 +5,12 @@ body {
     font-variation-settings:
         "wdth" 100;
     margin: 0;
+    background-color: var(--blanco-roto);
 }
 
 :root {
     --color-principal: rgb(255, 128, 40);
+    --blanco-roto: rgb(245, 245, 245);
     --gris-claro: rgb(238, 238, 238);
     --gris-medio: rgb(98, 98, 98);
     --gris-oscuro: rgb(25, 25, 25);
@@ -16,12 +18,14 @@ body {
 }
 
 .container {
-    max-width: 800px;
+    max-width: 900px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 2.5em;
     margin-bottom: 2em;
 }
+
+/*ESTILOS HEADER*/
 
 header {
     margin: 0;
@@ -29,7 +33,7 @@ header {
 
 #navegador {
     background-color: var(--gris-oscuro);
-    padding: 1em 0;
+    padding: 1em;
 }
 
 #textosNav {
@@ -71,6 +75,19 @@ a {
     cursor: pointer;
 }
 
+#imagenHeader {
+    overflow: hidden;
+}
+
+#imagenHeader img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Hace que la imagen cubra todo el espacio sin deformarse */
+    object-position: center;
+    /* ¡La clave! Fuerza a que siempre se vea el centro */
+}
+
 @media screen and (max-width:800px) {
     #textosNav {
         flex-direction: column;
@@ -79,8 +96,42 @@ a {
     #menuNavegador {
         margin-top: 0.5em;
     }
+
+    .container {
+        margin: 0 3em;
+    }
+
+    #quienesSomos {
+        flex-direction: column;
+        margin-top: 1em;
+    }
+
+    #footerIndex {
+        flex-direction: column;
+        padding: 3em;
+        gap: 1.8em;
+    }
 }
 
+/*ESTILOS BODY*/
+
+h2 {
+    color: var(--color-principal);
+    text-transform: uppercase;
+    margin: 0.5em 0;
+}
+
+#quienesSomos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+#textoQuienesSomos {
+    flex-basis: 50%;
+}
+
+/*ESTILOS FOOTER*/
 #fondoFoot {
     background-color: var(--gris-oscuro);
     color: var(--gris-claro);
@@ -140,6 +191,7 @@ path {
     display: flex;
     gap: 0.5em;
 }
+
 #logosRRSS:hover {
     cursor: pointer;
 }
@@ -161,4 +213,9 @@ path {
 
 .horas p {
     margin-bottom: 3em;
+}
+
+#imagenFooter {
+    display: block;
+    justify-self: end;
 }
