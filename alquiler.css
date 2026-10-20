@@ -1,0 +1,17 @@
+.card-body {
+    flex-grow: 0;
+}
+
+li::marker {
+    content: "";
+}
+
+.bold {
+    font-weight: bold;
+}
+
+section.container {
+    background-image: url(imagenes/montana.webp);
+    background-size: cover;
+    background-position: center;
+}
