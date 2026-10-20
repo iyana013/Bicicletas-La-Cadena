@@ -1,9 +1,24 @@
-.card-body {
-    flex-grow: 0;
+body {
+    font-family: "Radio Canada", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-variation-settings:
+        "wdth" 100;
+    margin: 0;
+    background-color: var(--gris-claro);
 }
 
-li::marker {
-    content: "";
+:root {
+    --color-principal: rgb(255, 128, 40);
+    --gris-claro: rgb(238, 238, 238);
+    --gris-medio: rgb(98, 98, 98);
+    --gris-oscuro: rgb(25, 25, 25);
+    --azul-apoyo: rgb(32, 222, 255);
+}
+
+.card-body {
+    flex-grow: 1;
+    align-content: baseline;
 }
 
 .bold {
@@ -14,4 +29,33 @@ section.container {
     background-image: url(imagenes/montana.webp);
     background-size: cover;
     background-position: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    background-blend-mode: lighten;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.foto-bici {
+    border-radius: 10px;
+    height: 35%;
+}
+
+.btn-primary {
+    background-color: var(--color-principal);
+    padding: 0.5em 1.1em;
+    border: none;
+    border-radius: 3px;
+    font-style: italic;
+    color: var(--gris-claro);
+    font-weight: 500;
+    font-size: 1.1em;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+    background-color: var(--gris-medio);
 }
