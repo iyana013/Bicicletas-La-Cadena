@@ -1,0 +1,164 @@
+body {
+    font-family: "Radio Canada", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-variation-settings:
+        "wdth" 100;
+    margin: 0;
+}
+
+:root {
+    --color-principal: rgb(255, 128, 40);
+    --gris-claro: rgb(238, 238, 238);
+    --gris-medio: rgb(98, 98, 98);
+    --gris-oscuro: rgb(25, 25, 25);
+    --azul-apoyo: rgb(32, 222, 255);
+}
+
+.container {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2.5em;
+    margin-bottom: 2em;
+}
+
+header {
+    margin: 0;
+}
+
+#navegador {
+    background-color: var(--gris-oscuro);
+    padding: 1em 0;
+}
+
+#textosNav {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    font-style: italic;
+    font-size: 1.1em;
+}
+
+#menuNavegador {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5em;
+}
+
+a {
+    text-decoration: none;
+    color: var(--gris-claro)
+}
+
+.btnContacto {
+    background-color: var(--color-principal);
+    padding: 0.5em 1.1em;
+    border: none;
+    border-radius: 3px;
+    font-style: italic;
+    color: var(--gris-claro);
+    font-weight: 500;
+    font-size: 1.1em;
+}
+
+.btnContacto:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-width:800px) {
+    #textosNav {
+        flex-direction: column;
+    }
+
+    #menuNavegador {
+        margin-top: 0.5em;
+    }
+}
+
+#fondoFoot {
+    background-color: var(--gris-oscuro);
+    color: var(--gris-claro);
+}
+
+#footerIndex {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 1em;
+    padding-bottom: 3em;
+}
+
+path {
+    fill: var(--color-principal);
+}
+
+#contactoFoot {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.datosContacto {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid color-mix(in srgb, var(--gris-medio) 20%, transparent);
+    padding-bottom: 1em;
+}
+
+.datosContacto svg {
+    margin-right: 0.8em
+}
+
+.datosContacto p {
+    margin: 0;
+}
+
+.tituloFoot {
+    font-weight: bold;
+}
+
+#fondoCopy {
+    background-color: var(--color-principal);
+    padding: 0.3em;
+}
+
+#copy {
+    text-align: center;
+    font-size: 0.9em;
+}
+
+#logosRRSS {
+    display: flex;
+    gap: 0.5em;
+}
+#logosRRSS:hover {
+    cursor: pointer;
+}
+
+.datosHorario {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid color-mix(in srgb, var(--gris-medio) 20%, transparent);
+    padding-bottom: 0.5em;
+}
+
+.datosHorario p {
+    margin: 0.3em 0;
+}
+
+.dias {
+    font-weight: bold;
+}
+
+.horas p {
+    margin-bottom: 3em;
+}
