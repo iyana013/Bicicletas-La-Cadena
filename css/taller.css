@@ -1,10 +1,7 @@
+
 .div-table-taller {
 	display: flex;
 	justify-content: center;
-}
-
-.table-taller {
-	width: 80%;
 }
 
 .table-taller td,
@@ -27,21 +24,26 @@
 	font-weight: 600;
 }
 
-.btn-add {
-	padding: 6px 14px;
-	border: 2px solid #333;
-	background: transparent;
-	cursor: pointer;
+.btn-add {cursor: pointer;
 	font-weight: 600;
+	margin-top: 2%;
+	background-color: var(--color-principal);
+    padding: 0.5em 1.1em;
+    border: none;
+    border-radius: 3px;
+    font-style: italic;
+    color: var(--gris-claro);
+    font-weight: 500;
+    font-size: 1.1em;
 }
 
 .btn-add:hover {
-	background: #333;
-	color: #fff;
+	background: var(--gris-medio);
+	color: var(--blanco-roto);
 }
 
 .div-carrito {
-	width: 80%;
+	width: 100%;
 	margin: 30px auto;
 }
 
@@ -56,7 +58,7 @@
 	align-items: center;
 	gap: 16px;
 	padding: 8px 0;
-	border-bottom: 2px solid #d0d0d0;
+	border-bottom: 2px solid var(--gris-claro);
 }
 
 .contenido-carrito {
@@ -66,7 +68,7 @@
 }
 
 .resumen-carrito {
-	width: 50%;
+	width: 60%;
 }
 
 .item-carrito {
@@ -87,14 +89,124 @@
 .btn-delete,
 .btn-mail,
 .btn-whatssap {
-	padding: 6px 14px;
-	border: 2px solid #333;
-	background: white;
 	cursor: pointer;
 	font-weight: 600;
+	margin-top: 2%;
+	background-color: var(--color-principal);
+    padding: 0.5em 1.1em;
+    border: none;
+    border-radius: 3px;
+    font-style: italic;
+    color: var(--gris-claro);
+    font-weight: 500;
+    font-size: 1.1em;
 }
 
-.btn-delete:hover {
-	background: #333;
-	color: #fff;
+.btn-mail,
+.btn-whatssap {
+	background-color: var(--color-principal);
 }
+
+.btn-delete {
+	background: var(--gris-medio);
+}
+
+
+.btn-delete:hover{
+	background: var(--gris-oscuro);
+}
+
+
+.btn-mail:hover {
+	background: #0078d4 ;
+}
+
+.btn-whatssap:hover {
+	background: #25d366;
+}
+
+.img-texto-mecanico {
+	display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.img-texto-mecanico img {
+	border-radius: 3px;
+}
+
+.texto-taller {
+	flex-basis: 60%;
+}
+
+@media screen and (max-width: 900px) {
+	.img-texto-mecanico {
+		flex-direction: column;
+		align-items: stretch; /* todo ocupa el ancho completo */
+		margin-top: 1em;
+	}
+
+	.img-texto-mecanico img {
+		width: 100%;      /* gana al width="300px" del HTML */
+		max-width: 100%;
+		height: auto;
+	}
+
+	.texto-taller {
+		flex-basis: auto;
+		width: 100%;
+	}
+}
+
+
+
+
+@media (max-width: 900px) {
+	.table-taller thead {
+		display: none;
+	}
+
+	/* Todo en bloque: la tabla deja de ser tabla */
+	/* ! LO HIZO CLAUDE */
+	.table-taller,
+	.table-taller tbody,
+	.table-taller tr,
+	.table-taller th,
+	.table-taller td {
+		display: block;
+		width: 100%;
+	}
+
+	/* Cada fila es una tarjeta */
+	.table-taller tr {
+		margin-bottom: 15px;
+		padding: 10px;
+		border: 1px solid #ccc;
+		border-radius: 10px;
+	}
+
+	/* El nombre del servicio arriba */
+	.table-taller tbody th {
+		margin-bottom: 8px;
+		text-align: left;
+	}
+
+	/* Como la cabecera ya no se ve, ponemos las etiquetas con CSS */
+	.table-taller td:nth-child(2)::before {
+		content: "Precio: ";
+		font-weight: bold;
+	}
+
+	.table-taller td:nth-child(3)::before {
+		content: "Plazo: ";
+		font-weight: bold;
+	}
+
+	/* Botón Añadir */
+	.table-taller td:nth-child(4) {
+		margin-top: 8px;
+	}
+}
+

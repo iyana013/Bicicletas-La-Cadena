@@ -18,14 +18,17 @@ body {
 }
 
 .container {
-    max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2.5em;
-    margin-bottom: 2em;
+	width: auto;          /* anula el width: 100% de Bootstrap */
+	max-width: 900px;
+	padding-left: 0;      /* anula el padding de Bootstrap */
+	padding-right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2.5em;
+	margin-bottom: 2em;
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:900px) {
     #textosNav {
         flex-direction: column;
     }
@@ -37,7 +40,7 @@ body {
     }
 
     .container {
-        margin: 0 3em;
+        margin: 0 1.5em;
     }
 
     #quienesSomos {
@@ -53,6 +56,8 @@ body {
 
     #imagenesMenu {
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     #imagenAlquiler {
@@ -60,7 +65,14 @@ body {
         width: 250px;
         height: 166.8px;
     }
+
+    #imagenFooter {
+	max-width: 100%;
+	height: auto;
 }
+    }
+
+
 
 /*ESTILOS HEADER*/
 
@@ -110,6 +122,11 @@ a {
 
 .btnContacto:hover {
     cursor: pointer;
+    border: 1px solid var(--color-principal);
+    background-color: transparent;
+}
+a:hover {
+    color: var(--color-principal);
 }
 
 #imagenHeader {
@@ -127,10 +144,11 @@ a {
 
 /*ESTILOS BODY*/
 
-h2 {
-    color: var(--color-principal);
-    text-transform: uppercase;
-    margin: 0.5em 0;
+.tituloH2  {
+    font-size: 1.5em;
+    color: var(--color-principal) !important;
+    text-transform: uppercase !important;
+    margin: 0.5em 0 !important;
 }
 
 #quienesSomos {
@@ -139,6 +157,10 @@ h2 {
     gap: 1em;
     align-items: center;
     margin-bottom: 2em;
+}
+
+#quienesSomos img {
+    border-radius: 3px;
 }
 
 #textoQuienesSomos {
@@ -165,6 +187,7 @@ h2 {
     height: 100%;
     object-fit: cover;
     transition: opacity 0.3s ease-in-out;
+    border-radius: 3px;
 }
 
 #imagenTaller:hover .imagenNormal {
@@ -182,6 +205,7 @@ h2 {
     margin-top: 3em;
     background-color: var(--gris-oscuro);
     color: var(--gris-claro);
+    overflow: hidden;
 }
 
 #footerIndex {
@@ -264,5 +288,5 @@ path {
 
 #imagenFooter {
     display: block;
-    justify-self: end;
+    margin-left: auto;
 }
