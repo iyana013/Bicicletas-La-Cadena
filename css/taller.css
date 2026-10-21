@@ -1,8 +1,13 @@
 
+.body {
+	background-color: var(--color-principal);
+}
+
 .div-table-taller {
 	display: flex;
 	justify-content: center;
 }
+
 
 .table-taller td,
 .table-taller th {
@@ -102,23 +107,13 @@
     font-size: 1.1em;
 }
 
-.btn-mail,
-.btn-whatssap {
-	background-color: var(--color-principal);
-}
-
-.btn-delete {
-	background: var(--gris-medio);
-}
-
-
 .btn-delete:hover{
-	background: var(--gris-oscuro);
+	background: #333;
 }
 
 
 .btn-mail:hover {
-	background: #0078d4 ;
+	background:#EA4335;
 }
 
 .btn-whatssap:hover {
@@ -127,43 +122,33 @@
 
 .img-texto-mecanico {
 	display: flex;
-    flex-wrap: wrap;
-    gap: 1em;
-    align-items: center;
-    margin-bottom: 2em;
+	align-items: center;
+	gap: 30px;
 }
 
 .img-texto-mecanico img {
-	border-radius: 3px;
+	width: 40%;
+	max-width: 100%;
+	height: auto;
+	border-radius: 12px;
 }
 
 .texto-taller {
-	flex-basis: 60%;
+	flex: 1;
 }
 
-@media screen and (max-width: 900px) {
+@media (max-width: 768px) {
 	.img-texto-mecanico {
 		flex-direction: column;
-		align-items: stretch; /* todo ocupa el ancho completo */
-		margin-top: 1em;
 	}
 
 	.img-texto-mecanico img {
-		width: 100%;      /* gana al width="300px" del HTML */
-		max-width: 100%;
-		height: auto;
-	}
-
-	.texto-taller {
-		flex-basis: auto;
 		width: 100%;
 	}
 }
 
 
-
-
-@media (max-width: 900px) {
+@media (max-width: 768px) {
 	.table-taller thead {
 		display: none;
 	}
