@@ -25,9 +25,9 @@
                 </div>
                 <div id="menuNavegador">
                     <a href="index.html">INICIO</a>
-                    <a href="">TALLER</a>
-                    <a href="">ALQUILER</a>
-                    <button class="btnContacto">CONTACTO</button>
+                    <a href="taller.html">TALLER</a>
+                    <a href="alquiler.html">ALQUILER</a>
+                    <button class="btnContacto"><a href="contacto.html">CONTACTO</a></button>
                 </div>
             </div>
         </nav>
@@ -37,18 +37,24 @@
     <div class="container">
 
         <form action="exito.html" method="post">
-            <legend>Pide tu presupuesto sin llamar:</legend>
-            <label for="nombre">Nombre</label><br>
-            <input type="text" name="nombre" placeholder="Tu nombre"><br><br>
-            <label for="telefono">Teléfono</label><br>
-            <input type="number" name="telefono" placeholder="Tu teléfono/WhatsApp"><br><br>
-            <label for="email">E-Mail</label><br>
-            <input type="email" name="email" placeholder="email@ejemplo.com"><br><br>
-            <textarea name="consulta" id="consulta" placeholder="Escribe aquí tu consulta y en breve nos pondremos en contacto."></textarea>
-            <br><br>
-            <button type="submit">Pedir presupuesto</button>
-            <button type="reset">Limpiar formulario</button>
+            <div class="formulario-contacto">
+                <legend>Pide tu presupuesto sin llamar:</legend>
+                <label for="nombre">Nombre</label><br>
+                <input type="text" name="nombre" placeholder="Tu nombre"><br><br>
+                <label for="telefono">Teléfono</label><br>
+                <input type="number" name="telefono" placeholder="Tu teléfono/WhatsApp"><br><br>
+                <label for="email">E-Mail</label><br>
+                <input type="email" name="email" placeholder="email@ejemplo.com"><br><br>
+                <label for="consulta">Escribe tu consulta</label><br>
+                <textarea name="consulta" id="consulta"
+                    placeholder="Escribe aquí tu consulta y en breve nos pondremos en contacto."></textarea>
+                <br><br>
+                <button class="btn btn-enviar" type="submit">Pedir presupuesto</button>
+                <button class="btn btn-reset" type="reset">Limpiar formulario</button>
         </form>
+    </div>
+    <img src="imagenes/taller-bicicleta.webp" alt="Cadena de bicicleta siendo arreglada en un taller">
+    <!-- Puse la imagen por poner, se puede cambiar. -->
 
     </div>
 
