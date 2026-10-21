@@ -79,3 +79,26 @@ function mostrarCarrito() {
 }
 
 mostrarCarrito();
+
+let btnMail = document.querySelector(".btn-mail");
+
+btnMail.addEventListener("click", function () {
+	let asunto = "Solicitud de información";
+	let mensaje = `Hola, he estado haciendo un presupuesto en la web y me gustaría saber más sobre él y/o concertar una cita. Estos son los detalles de lo que he estado calculando:
+
+${LISTA.innerText} ${TOTAL_SPAN.textContent}`;
+
+	let hrefPersonalizadoMail = `mailto:laCadena@gmail.com?subject=${encodeURIComponent(asunto)}&body=${encodeURIComponent(mensaje)}`;
+	location.href = hrefPersonalizadoMail;
+});
+
+let btnWhatssap = document.querySelector(".btn-whatssap");
+
+btnWhatssap.addEventListener("click", function () {
+	let mensaje = `Hola, he estado haciendo un presupuesto en la web y me gustaría saber más sobre él y/o concertar una cita. Estos son los detalles de lo que he estado calculando:
+
+${LISTA.innerText} ${TOTAL_SPAN.textContent}`;
+
+	let hrefPersonalizadoWhatssap = `https://wa.me/34600000000?text=${encodeURIComponent(mensaje)}`;
+	location.href = hrefPersonalizadoWhatssap;
+});
