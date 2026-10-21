@@ -1,60 +1,147 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Alquiler · La cadena bicis</title>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="css/alquiler.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Radio+Canada:ital,wght@0,300..700;1,300..700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="css/index.css">
+		<link rel="stylesheet" href="css/alquiler.css">
+	</head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alquiler · La cadena bicis</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Radio+Canada:ital,wght@0,300..700;1,300..700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/alquiler.css">
-</head>
+	<body>
+		<header>
+			<div id="zonaContacto"></div>
+			<nav id="navegador">
+				<div id="textosNav">
+					<div id="logoHeader">
+						<img
+							src="index-imgs/header-logo.png"
+							alt="logotipo en blanco"
+							width="240px"
+						/>
+					</div>
+					<div id="menuNavegador">
+						<a href="index.html">INICIO</a>
+						<a href="taller.html">TALLER</a>
+						<a href="alquiler.html">ALQUILER</a>
+						<button class="btnContacto">CONTACTO</button>
+					</div>
+				</div>
+			</nav>
+		</header>
 
-<body>
-    <header>
-        <div id="zonaContacto">
+		<section class="py-4 text-center container">
+			<div class="row py-lg-4">
+				<div class="col-lg-6 col-md-8 mx-auto">
+					<h1 class="fw-light">Alquiler de bicicletas</h1>
+					<p class="lead text-muted">
+						¡Alquila una bici para recorrer la sierra!
+					</p>
+					<ul class="list-unstyled">
+						<li>
+							Casco y candado <span class="bold">incluidos</span> en el precio.
+						</li>
+						<li>Alquiler por días completos.</li>
+						<li>
+							Necesario dejar fianza: <span class="bold">50€ o DNI.</span>
+						</li>
+					</ul>
+					<p>
+						<a href="contacto.html" class="btn btn-primary my-2"
+							>Pide presupuesto sin llamar</a
+						>
+					</p>
+				</div>
+			</div>
+		</section>
 
-        </div>
-        <nav id="navegador">
-            <div id="textosNav">
-                <div id="logoHeader">
-                    <img src="index-imgs/header-logo.png" alt="logotipo en blanco" width="240px">
-                </div>
-                <div id="menuNavegador">
-                    <a href="index.html">INICIO</a>
-                    <a href="">TALLER</a>
-                    <a href="">ALQUILER</a>
-                    <button class="btnContacto">CONTACTO</button>
-                </div>
-            </div>
-        </nav>
-    </header>
+		<div class="album py-5 bg-light">
+			<div class="container">
+				<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+					<div class="col">
+						<div class="card shadow-sm h-100">
+							<img
+								class="foto-bici"
+								src="imagenes/bici-urbana.webp"
+								alt="Bicicleta urbana disponible para alquilar"
+							/>
 
-    <section class="py-4 text-center container">
-        <div class="row py-lg-4">
-            <div class="col-lg-6 col-md-8 mx-auto">
-                <h1 class="fw-light">Alquiler de bicicletas</h1>
-                <p class="lead text-muted">¡Alquila una bici para recorrer la sierra!
-                </p>
-                <ul class="list-unstyled">
-                    <li>Casco y candado <span class="bold">incluidos</span> en el precio.</li>
-                    <li>Alquiler por días completos.</li>
-                    <li>Necesario dejar fianza: <span class="bold">50€ o DNI.</span></li>
-                </ul>
-                <p>
-                    <a href="contacto.html" class="btn btn-primary my-2">Pide presupuesto sin llamar</a>
-                </p>
-            </div>
-        </div>
-    </section>
+							<div class="card-body d-flex flex-column justify-content-between">
+								<h4>Bici urbana · (12 €/día)</h4>
+								<p class="card-text">
+									Alquila una de nuestras bicis urbanas para visitar todos los
+									rincones de la ciudad. Tenemos varios modelos disponibles,
+									¡pregunta sin compromiso!
+								</p>
+								<div class="d-flex justify-content-end align-items-right">
+									<button type="button" class="btn btn-primary">
+										<a href="contacto.html">Consulta disponibilidad</a>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card shadow-sm h-100">
+							<img
+								class="foto-bici"
+								src="imagenes/bici-montana.webp"
+								alt="Bicicleta de montaña disponible para alquilar"
+							/>
 
+							<div class="card-body d-flex flex-column justify-content-between">
+								<h4>Bici de montaña · (20 €/día)</h4>
+								<p class="card-text">
+									Recorre la sierra sin preocupaciones con nuestras bicis. Te
+									recomendaremos la más adecuada para el tipo de ruta que
+									quieras hacer. ¡Alta demanda!
+								</p>
+								<div class="d-flex justify-content-end align-items-center">
+									<div class="btn-group">
+										<button type="button" class="btn btn-primary">
+											<a href="contacto.html">Consulta disponibilidad</a>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card shadow-sm h-100">
+							<img
+								class="foto-bici"
+								src="imagenes/bici-electrica.webp"
+								alt="Bicicleta eléctrica disponible para alquilar"
+							/>
 
-    <div class="album py-5 bg-light">
-        <div class="container">
+							<div class="card-body d-flex flex-column justify-content-between">
+								<h4>Bici eléctrica · (35 €/día)</h4>
+								<p class="card-text">
+									Bicis eléctricas disponibles para los paseos más demandantes.
+									Tenemos los modelos más actuales del mercado.
+								</p>
+								<div class="btn-group">
+									<button type="button" class="btn btn-primary">
+										<a href="contacto.html">Consulta disponibilidad</a>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                 <div class="col">
