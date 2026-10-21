@@ -56,6 +56,7 @@ section.container {
 
 .btn:hover {
     transform: scale(1.05);
-    transition: 0.3s;
+    transition: 0.3s ease-in-out;
     background-color: var(--gris-medio);
+    border: none;
 }

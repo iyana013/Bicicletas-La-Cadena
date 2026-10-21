@@ -6,12 +6,17 @@ legend {
 
 label {
     font-weight: bold;
+    color: var(--gris-oscuro);
 }
 
 input,
 textarea {
     margin-top: 0.2rem;
     width: 88%;
+    padding: 2%;
+    border-radius: 3px;
+    border: none;
+    margin-top: 0.6em;
 }
 
 .btn {
@@ -30,16 +35,17 @@ textarea {
 }
 
 .btn-enviar:hover {
-    transform: scale(1.05);
-    transition: 0.3s;
+    transform: scale(1.03);
+    transition: 0.3s ease-in-out;
     background-color: var(--gris-medio);
     cursor: pointer;
 }
 
 .btn-reset:hover {
     cursor: pointer;
-    transform: scale(1.05);
-    transition: 0.3s;
+    transform: scale(1.03);
+    transition: 0.3s ease-in-out;
+    color: var(--gris-oscuro);
 }
 
 .container {

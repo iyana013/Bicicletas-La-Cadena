@@ -6,7 +6,20 @@
 .div-table-taller {
 	display: flex;
 	justify-content: center;
+	margin-top: 3em;
+	border-collapse: collapse;
+	border-spacing: 0;
+	margin: 0;
 }
+
+
+	table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  margin-top: 2.3em;
+}
+
 
 
 .table-taller td,
@@ -29,7 +42,8 @@
 	font-weight: 600;
 }
 
-.btn-add {cursor: pointer;
+.btn-add {
+	cursor: pointer;
 	font-weight: 600;
 	margin-top: 2%;
 	background-color: var(--color-principal);
@@ -40,11 +54,13 @@
     color: var(--gris-claro);
     font-weight: 500;
     font-size: 1.1em;
+	border: none;
 }
 
 .btn-add:hover {
 	background: var(--gris-medio);
 	color: var(--blanco-roto);
+	border: none;
 }
 
 .div-carrito {
@@ -109,15 +125,18 @@
 
 .btn-delete:hover{
 	background: #333;
+	border: none;
 }
 
 
 .btn-mail:hover {
-	background:#EA4335;
+	background: #0078D4;
+	border: none;
 }
 
 .btn-whatssap:hover {
 	background: #25d366;
+	border: none;
 }
 
 .img-texto-mecanico {
@@ -130,7 +149,7 @@
 	width: 40%;
 	max-width: 100%;
 	height: auto;
-	border-radius: 12px;
+	border-radius: 3px;
 }
 
 .texto-taller {
