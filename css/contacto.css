@@ -1,0 +1,59 @@
+legend {
+    font-size: 20pt;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+textarea {
+    margin-top: 0.2rem;
+    width: 88%;
+}
+
+.btn {
+    padding: 0.5em 1.1em;
+    border: none;
+    border-radius: 3px;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 1.1em;
+    color: var(--color-principal);
+}
+
+.btn-enviar {
+    background-color: var(--color-principal);
+    color: var(--gris-claro);
+}
+
+.btn-enviar:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+    background-color: var(--gris-medio);
+    cursor: pointer;
+}
+
+.btn-reset:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container img {
+    width: 50%;
+    object-fit: contain;
+    opacity: 0.85;
+}
+
+.formulario-contacto {
+    min-width: 50%;
+}

@@ -1,11 +1,16 @@
+
+.body {
+	background-color: var(--color-principal);
+}
+
 .div-table-taller {
 	display: flex;
 	justify-content: center;
 }
 
-.table-taller {
-	width: 80%;
-}
+
+
+
 
 .table-taller td,
 .table-taller th {
@@ -27,12 +32,17 @@
 	font-weight: 600;
 }
 
-.btn-add {
-	padding: 6px 14px;
-	border: 2px solid #333;
-	background: transparent;
-	cursor: pointer;
+.btn-add {cursor: pointer;
 	font-weight: 600;
+	margin-top: 2%;
+	background-color: var(--color-principal);
+    padding: 0.5em 1.1em;
+    border: none;
+    border-radius: 3px;
+    font-style: italic;
+    color: var(--gris-claro);
+    font-weight: 500;
+    font-size: 1.1em;
 }
 
 .btn-add:hover {
@@ -41,7 +51,7 @@
 }
 
 .div-carrito {
-	width: 80%;
+	width: 100%;
 	margin: 30px auto;
 }
 
@@ -92,9 +102,101 @@
 	background: white;
 	cursor: pointer;
 	font-weight: 600;
+	margin-top: 2%;
+	background-color: var(--color-principal);
+    padding: 0.5em 1.1em;
+    border: none;
+    border-radius: 3px;
+    font-style: italic;
+    color: var(--gris-claro);
+    font-weight: 500;
+    font-size: 1.1em;
 }
 
-.btn-delete:hover {
+.btn-delete:hover{
 	background: #333;
-	color: #fff;
+}
+
+
+.btn-mail:hover {
+	background:#EA4335;
+}
+
+.btn-whatssap:hover {
+	background: #25d366;
+}
+
+.img-texto-mecanico {
+	display: flex;
+	align-items: center;
+	gap: 30px;
+}
+
+.img-texto-mecanico img {
+	width: 40%;
+	max-width: 100%;
+	height: auto;
+	border-radius: 12px;
+}
+
+.texto-taller {
+	flex: 1;
+}
+
+@media (max-width: 768px) {
+	.img-texto-mecanico {
+		flex-direction: column;
+	}
+
+	.img-texto-mecanico img {
+		width: 100%;
+	}
+}
+
+
+@media (max-width: 768px) {
+	.table-taller thead {
+		display: none;
+	}
+
+	/* Todo en bloque: la tabla deja de ser tabla */
+	/* ! LO HIZO CLAUDE */
+	.table-taller,
+	.table-taller tbody,
+	.table-taller tr,
+	.table-taller th,
+	.table-taller td {
+		display: block;
+		width: 100%;
+	}
+
+	/* Cada fila es una tarjeta */
+	.table-taller tr {
+		margin-bottom: 15px;
+		padding: 10px;
+		border: 1px solid #ccc;
+		border-radius: 10px;
+	}
+
+	/* El nombre del servicio arriba */
+	.table-taller tbody th {
+		margin-bottom: 8px;
+		text-align: left;
+	}
+
+	/* Como la cabecera ya no se ve, ponemos las etiquetas con CSS */
+	.table-taller td:nth-child(2)::before {
+		content: "Precio: ";
+		font-weight: bold;
+	}
+
+	.table-taller td:nth-child(3)::before {
+		content: "Plazo: ";
+		font-weight: bold;
+	}
+
+	/* Botón Añadir */
+	.table-taller td:nth-child(4) {
+		margin-top: 8px;
+	}
 }
