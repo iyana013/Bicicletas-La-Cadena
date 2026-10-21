@@ -20,12 +20,15 @@ for (let i = 0; i < BOTONES.length; i++) {
 }
 
 BTN_VACIAR.addEventListener("click", function () {
-	for (let i = 0; i < cantidades.length; i++) {
-		cantidades[i] = 0;
-	}
-	mostrarCarrito();
-});
+	let confirmar = confirm("¿Seguro que quieres vaciar el carrito?");
 
+	if (confirmar === true) {
+		for (let i = 0; i < cantidades.length; i++) {
+			cantidades[i] = 0;
+		}
+		mostrarCarrito();
+	}
+});
 function mostrarCarrito() {
 	LISTA.innerHTML = "";
 
@@ -88,7 +91,7 @@ btnMail.addEventListener("click", function () {
 
 ${LISTA.innerText} ${TOTAL_SPAN.textContent}`;
 
-	let hrefPersonalizadoMail = `mailto:laCadena@gmail.com?subject=${encodeURIComponent(asunto)}&body=${encodeURIComponent(mensaje)}`;
+	let hrefPersonalizadoMail = `mailto:hola@lacadena.bicis?subject=${encodeURIComponent(asunto)}&body=${encodeURIComponent(mensaje)}`;
 	location.href = hrefPersonalizadoMail;
 });
 
