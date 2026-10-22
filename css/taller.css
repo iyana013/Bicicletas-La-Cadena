@@ -123,8 +123,12 @@
     font-size: 1.1em;
 }
 
+.btn-delete {
+	background: var(--gris-oscuro);
+}
+
 .btn-delete:hover{
-	background: #333;
+	background: var(--gris-medio);
 	border: none;
 }
 

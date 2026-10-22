@@ -18,9 +18,9 @@ body {
 }
 
 .container {
-	width: auto;          /* anula el width: 100% de Bootstrap */
+	width: auto;
 	max-width: 900px;
-	padding-left: 0;      /* anula el padding de Bootstrap */
+	padding-left: 0;
 	padding-right: 0;
 	margin-left: auto;
 	margin-right: auto;

@@ -5,7 +5,7 @@ body {
     font-variation-settings:
         "wdth" 100;
     margin: 0;
-    background-color: var(--gris-claro);
+    background-color: var(--blanco-roto);
 }
 
 :root {
@@ -29,7 +29,7 @@ section.container {
     background-image: url(../imagenes/montana.webp);
     background-size: cover;
     background-position: center;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.65);
     background-blend-mode: lighten;
 }
 
