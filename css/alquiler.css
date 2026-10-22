@@ -60,3 +60,12 @@ section.container {
     background-color: var(--gris-medio);
     border: none;
 }
+
+@media screen and (max-width:900px) {
+.container {
+    margin-top: 2em;
+}
+.banner-text {
+    padding: 2em;
+}
+}

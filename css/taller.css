@@ -163,6 +163,7 @@
 @media (max-width: 768px) {
 	.img-texto-mecanico {
 		flex-direction: column;
+			margin-top: 1em;
 	}
 
 	.img-texto-mecanico img {
@@ -172,6 +173,7 @@
 
 
 @media (max-width: 768px) {
+
 	.table-taller thead {
 		display: none;
 	}
@@ -185,6 +187,8 @@
 	.table-taller td {
 		display: block;
 		width: 100%;
+align-items: center;
+		justify-items: center;
 	}
 
 	/* Cada fila es una tarjeta */
@@ -193,6 +197,7 @@
 		padding: 10px;
 		border: 1px solid #ccc;
 		border-radius: 10px;
+
 	}
 
 	/* El nombre del servicio arriba */
